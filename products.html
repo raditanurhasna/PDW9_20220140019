@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Harvest Market</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fresh Harvest Market</h1>
+        <nav>
+            <ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_osF-9VxkwG-k0ytH3fKIvgELHyQnQ-hZHfm1bG5iImFhny5ahbqTrbkU_euaJN6kj3U&usqp=CAU" alt="Green Apple">
+                <div class="product-details">
+                    <h3>Apple</h3>
+                    <p>$1.00 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOzaRYn3JBBB5nDH3NE95AlVvACFp56fQVIA&s" alt="Banana">
+                <div class="product-details">
+                    <h3>Banana</h3>
+                    <p>$0.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.alivewholefoods.com/wp-content/uploads/2022/03/6344bc_864fa67f091b4d5ea559f87f359410a2mv2.jpg" alt="Mango">
+                <div class="product-details">
+                    <h3>Mango</h3>
+                    <p>$1.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKuX4UHPOlqjivmZAnRniw1Sv8NqyQazGN_g&s" alt="Dragon Fruit">
+                <div class="product-details">
+                    <h3>Dragon Fruit</h3>
+                    <p>$2.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/153011217/id/foto/melon-segar-dengan-satu-irisan-dipotong.jpg?s=612x612&w=0&k=20&c=gCXTSkfStNwo5QWNvjV8XomoN6kMQUYykHXt2O3Qb1Q=" alt="Melon">
+                <div class="product-details">
+                    <h3>Melon</h3>
+                    <p>$2.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://www.sodea-fruits.com/wp-content/uploads/2022/10/orange.jpg" alt="Orange">
+                <div class="product-details">
+                    <h3>Orange</h3>
+                    <p>$2.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/834807852/id/foto/buah-kiwi-utuh-dan-setengah-buah-kiwi-di-atas-putih.jpg?s=612x612&w=0&k=20&c=K2VfIfF80LkV8E8WtLqQBit7brUkesjDX8QufGMaauI=" alt="Kiwi">
+                <div class="product-details">
+                    <h3>Kiwi</h3>
+                    <p>$2.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://cdn.policyx.com/images/benefits-of-pear-fruit-main-banner-1.webp" alt="Pear">
+                <div class="product-details">
+                    <h3>Pear</h3>
+                    <p>$2.50 each</p>
+                </div>
+                <div class="product-action">
+                    <button class="add-to-cart" onclick="showAlert()">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="WhatsApp">WhatsApp:</label>
+            <input type="text" id="WhatsApp" name="WhatsApp" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fruit Shop</p>
+    </footer>
+
+    <div id="alertBox" class="alert">
+        <span class="closebtn" onclick="closeAlert()">&times;</span>
+        <strong id="alertMessage">Alert!</strong>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
